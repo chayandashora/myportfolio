@@ -1,16 +1,10 @@
 pipeline {
     agent any
     
-    stages {
-        stage('Pull Source Code') {
-            steps {
-                sh 'git pull'
-            }
-        }
-        
+    stages {        
         stage('Build Source Code') {
             steps {
-                sh 'npm install'
+                sh 'npm install && npm run build'
             }
         }
         
