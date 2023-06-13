@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull Source Code') {
             steps {
-                git 'https://github.com/chayandashora/myportfolio.git'
+                sh 'git pull'
             }
         }
         
