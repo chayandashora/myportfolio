@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy" : "npm run build",
-    "deploy" : "echo chayandashora.me > CNAME && gh-pages -d build"
+    "deploy" : "echo 'chayandashora.me' > ./build/CNAME && gh-pages -d build"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
