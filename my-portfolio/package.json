@@ -1,4 +1,5 @@
 {
+  "homepage": "https://chayandashora.me/myportfolio",
   "name": "testapp",
   "private": true,
   "version": "0.0.0",
@@ -7,6 +8,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "predeploy" : "npm run build",
     "deploy" : "echo 'chayandashora.me' > ./build/CNAME && gh-pages -d build"
   },
   "dependencies": {
